@@ -7,6 +7,18 @@
 }
 
 /* Variables */
+/* yellow
+:root {
+    --main-color: #FFB400;       
+    --main-text-color: #FFFFFF;
+    --border-color: #E6A700;      
+    --bio-bg-color: #2D2D2D;       
+    --bio-border-color: #E6A700;   
+    --about-bg-color: #1A1A1A;     
+}
+*/
+
+/* cyan */
 :root {
     --main-color: #54B689;
     --main-text-color: #FFF;
@@ -14,11 +26,23 @@
     --bio-bg-color: #1E2A3A;
     --bio-border-color: #293544;
     --about-bg-color: #111821;
-}   
+}  
+
+/* orange
+:root {
+    --main-color: #E65B50; 
+    --main-text-color: #E0E0E0;
+    --border-color: #555;
+    --bio-bg-color: #1A2430; 
+    --bio-border-color: #2B3744;
+    --about-bg-color: #121921;
+}
+*/
 
 /* General */
 .highlight {
     color: var(--main-color);
+    font-weight: bold;
 }
 
 /* Containers */
@@ -46,6 +70,7 @@
 
 /* Bio container */ 
 #bio-container h2 {
+    font-size: 28px;
     margin-bottom: 25px;
 }
 
@@ -56,6 +81,11 @@
 
 #bio-container #welcome-text {
     font-weight: bold;
+    font-size: 20px;
+}
+
+#bio-container #bio-info {
+    font-size: 18px;
 }
 
 #bio-container img {
@@ -118,7 +148,7 @@
 }
 
 /* about container */
-#name {
+#about {
     font-size: 42px;
     margin-bottom: 15px;
 }
@@ -132,7 +162,7 @@
 .description {
     max-width: 75%;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
 }
 
