@@ -261,6 +261,14 @@
         text-align: left;
     }
 
+    #social-container li:hover {
+        transform: none;
+    }
+
+    #testing i {
+        font-size: 85px;
+    }
+
 }
 
 
