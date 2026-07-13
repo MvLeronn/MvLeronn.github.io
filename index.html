@@ -1,112 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Marcos Vinicius Correia</title>
-    <!-- Google Fonts -->
+    <meta name="description" content="Portfólio de Marcos Vinicius Correia Sanches, Desenvolvedor Full Stack com experiência em Node.js, React, React Native, Go e cloud.">
+    <title>Marcos Vinicius Correia Sanches | Desenvolvedor Full Stack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Dev Icons Fonts -->
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <!-- CSS --> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <main id="container">
         <aside id="bio-container">
             <h2>Marcos Vinicius Correia Sanches</h2>
-            <img src="img/profile.png" alt="Marcos Vinicius Correia Sanches">
-            <p id="welcome-text">Seja bem-vindo!</p>
-            <p id="bio-info">Olá, meu nome é Marcos Vinicius e sou <span class="highlight">Desenvolvedor De Software</span>.</p>
-    
-            <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/marcosviniciuscs/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://github.com/MvLeronn" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            <img src="img/profile.png" alt="Foto de Marcos Vinicius Correia Sanches">
+            <p id="welcome-text">Desenvolvedor Full Stack</p>
+            <p id="bio-info">Criação de soluções web e mobile com foco em APIs, interfaces responsivas e cloud.</p>
+
+            <ul id="social-container" aria-label="Redes sociais">
+                <li><a href="https://www.linkedin.com/in/marcosviniciuscs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/MvLeronn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://mvcssoftware.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site pessoal"><ion-icon name="globe-outline"></ion-icon></a></li>
             </ul>
 
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:marcos23_correia@hotmail.com">marcos23_correia@hotmail.com</a>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <a href="mailto:marcos23_correia@hotmail.com">marcos23_correia@hotmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Pouso Alegre - MG</span>
+                </div>
             </div>
-
         </aside>
 
         <section id="about-container">
-            <h1 id="about">Sobre mim</h1>
-            <p id="title"><span class="highlight">Desenvolvedor De Software</span></p>
-
-            <p class="description">Sou <span class="highlight">estudante</span> de <span class="highlight">Engenharia de Software no 9º período do Inatel</span> e sou apaixonado por <span class="highlight">criar e pensar em soluções inovadoras</span>.</p>
-            <p class="description">Tenho experiência no desenvolvimento de software, utilizando <span class="highlight">Kotlin</span> para desenvolver <span class="highlight">Android</span>, <span class="highlight">React JS</span> para <span class="highlight">front-end</span> e <span class="highlight">Java com Spring Boot</span> para <span class="highlight">back-end</span>, criando soluções eficientes e escaláveis para diferentes plataformas.</p>
-            <p class="description">Estou sempre em <span class="highlight">busca de novos desafios</span> para aprimorar minhas habilidades e escrever <span class="highlight">código de qualidade</span>.</p>
-
-            <a href="https://github.com/MvLeronn" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span class="highlight">Ver Projetos</span></a>
-
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Conheça as tecnologias que domino:</p>
-
-            <div id="skills-container">
-
-                <div class="skills-box">
-                    <p class="skills-title">Front-end</p>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
+            <section class="hero-section">
+                <p class="eyebrow">Portfólio profissional</p>
+                <h1>Marcos Vinicius Correia Sanches</h1>
+                <p id="title"><span class="highlight">Desenvolvedor Full Stack | Node.js | React | React Native</span></p>
+                <p class="description">Desenvolvedor Full Stack com experiência na criação de plataformas web e mobile.</p>
+                <p class="description">Tenho conhecimento em React, Next.js, React Native, Node.js, Go, TypeScript, APIs REST, bancos de dados relacionais e implantação de aplicações em cloud.</p>
+                <div class="action-row">
+                    <a href="https://github.com/MvLeronn" class="primary-button" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon><span>Ver projetos</span></a>
+                    <a href="https://www.linkedin.com/in/marcosviniciuscs/" class="secondary-button" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon><span>LinkedIn</span></a>
                 </div>
+            </section>
 
-                <div class="skills-box">
-                    <p class="skills-title">Back-end</p>
-                    <i class="devicon-java-plain-wordmark colored"></i>
-                    <i class="devicon-python-plain-wordmark colored"></i>
-                    <i class="devicon-cplusplus-plain colored"></i>
-                </div>
+            <section class="content-section">
+                <h2>Habilidades</h2>
+                <p class="section-intro">Tecnologias e práticas presentes no currículo e na experiência profissional.</p>
 
-                <div class="skills-box" id="mobile">
-                    <p class="skills-title">Mobile Development</p>
-                    <i class="devicon-kotlin-plain-wordmark colored"></i>
-                </div>
+                <div id="skills-container">
+                    <div class="skills-box">
+                        <p class="skills-title">Frontend</p>
+                        <div class="icon-row">
+                            <span class="skill-item"><i class="devicon-react-original colored" aria-hidden="true"></i>React</span>
+                            <span class="skill-item"><i class="devicon-nextjs-plain" aria-hidden="true"></i>Next.js</span>
+                            <span class="skill-item"><i class="devicon-typescript-plain colored" aria-hidden="true"></i>TypeScript</span>
+                            <span class="skill-item"><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span>
+                            <span class="skill-item"><i class="devicon-tailwindcss-original colored" aria-hidden="true"></i>Tailwind CSS</span>
+                            <span class="skill-item"><i class="devicon-html5-plain colored" aria-hidden="true"></i>HTML5</span>
+                            <span class="skill-item"><i class="devicon-css3-plain colored" aria-hidden="true"></i>CSS3</span>
+                        </div>
+                    </div>
 
-                <div class="skills-box">
-                    <p class="skills-title">Databases</p>
-                    <i class="devicon-mysql-plain-wordmark"></i>
-                    <i class="devicon-mongodb-plain-wordmark colored"></i>
-                    <i class="devicon-neo4j-plain-wordmark colored"></i>
-                </div>
+                    <div class="skills-box">
+                        <p class="skills-title">Backend</p>
+                        <div class="icon-row">
+                            <span class="skill-item"><i class="devicon-nodejs-plain-wordmark colored" aria-hidden="true"></i>Node.js</span>
+                            <span class="skill-item"><i class="devicon-go-original-wordmark colored" aria-hidden="true"></i>Go</span>
+                            <span class="skill-item"><i class="devicon-csharp-plain colored" aria-hidden="true"></i>C#</span>
+                            <span class="skill-item"><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span>
+                            <span class="skill-item"><i class="devicon-java-plain colored" aria-hidden="true"></i>Java</span>
+                            <span class="skill-item"><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i>C++</span>
+                        </div>
+                    </div>
 
-                <div class="skills-box">
-                    <p class="skills-title">Front-end Frameworks</p>
-                    <i class="devicon-react-original-wordmark colored"></i>
-                </div>
+                    <div class="skills-box">
+                        <p class="skills-title">Mobile</p>
+                        <div class="icon-row">
+                            <span class="skill-item"><i class="devicon-react-original colored" aria-hidden="true"></i>React Native</span>
+                            <span class="skill-item"><i class="devicon-kotlin-plain colored" aria-hidden="true"></i>Kotlin</span>
+                        </div>
+                    </div>
 
-                <div class="skills-box">
-                    <p class="skills-title">Back-end Frameworks</p>
-                    <i class="devicon-spring-original-wordmark colored"></i>
-                </div>
+                    <div class="skills-box">
+                        <p class="skills-title">Testes e API</p>
+                        <div class="icon-row">
+                            <span class="skill-item"><i class="devicon-jest-plain colored" aria-hidden="true"></i>Jest</span>
+                            <span class="skill-chip">Vitest</span>
+                            <span class="skill-item"><i class="devicon-cypressio-plain colored" aria-hidden="true"></i>Cypress</span>
+                            <span class="skill-item"><i class="devicon-postman-plain colored" aria-hidden="true"></i>Postman</span>
+                            <span class="skill-chip">REST APIs</span>
+                        </div>
+                    </div>
 
-                <div class="skills-box">
-                    <p class="skills-title">Tools</p>
-                    <i class="devicon-git-plain-wordmark colored"></i>
-                    <i class="devicon-docker-plain-wordmark colored"></i>
-                </div>
+                    <div class="skills-box">
+                        <p class="skills-title">Cloud e Dados</p>
+                        <div class="icon-row">
+                            <span class="skill-item"><i class="devicon-googlecloud-plain colored" aria-hidden="true"></i>GCP</span>
+                            <span class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>AWS</span>
+                            <span class="skill-item"><i class="devicon-cloudflare-plain colored" aria-hidden="true"></i>Cloudflare</span>
+                            <span class="skill-item"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i>PostgreSQL</span>
+                            <span class="skill-item"><i class="devicon-mysql-plain colored" aria-hidden="true"></i>MySQL</span>
+                            <span class="skill-item"><i class="devicon-mongodb-plain colored" aria-hidden="true"></i>MongoDB</span>
+                        </div>
+                    </div>
 
-                <div class="skills-box" id="testing">
-                    <p class="skills-title">Testing & API</p>
-                    <i class="devicon-postman-plain-wordmark colored"></i>
-                    <i class="devicon-cypressio-plain-wordmark"></i>
-                    <i class="devicon-junit-plain-wordmark colored"></i>
+                    <div class="skills-box">
+                        <p class="skills-title">Ferramentas e Práticas</p>
+                        <div class="icon-row">
+                            <span class="skill-item"><i class="devicon-git-plain colored" aria-hidden="true"></i>Git</span>
+                            <span class="skill-item"><i class="devicon-docker-plain colored" aria-hidden="true"></i>Docker</span>
+                            <span class="skill-item"><i class="devicon-githubactions-plain colored" aria-hidden="true"></i>GitHub Actions</span>
+                            <span class="skill-item"><i class="devicon-jenkins-line colored" aria-hidden="true"></i>Jenkins</span>
+                            <span class="skill-chip">Clean Code</span>
+                            <span class="skill-chip">SOLID</span>
+                            <span class="skill-chip">Scrum</span>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="skills-box">
-                    <p class="skills-title">CI/CD & Build Tools</p>
-                    <i class="devicon-jenkins-line colored"></i>
-                    <i class="devicon-gradle-original-wordmark"></i>
-                    <i class="devicon-githubactions-plain colored"></i>
+            <section class="content-section">
+                <h2>Experiência</h2>
+                <article class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3>Oracclum Company LTDA</h3>
+                            <p>Estagiário em Desenvolvimento de Software (Full Stack)</p>
+                        </div>
+                        <span>Abr 2025 - Dez 2025</span>
+                    </div>
+                    <ul>
+                        <li>Desenvolvimento de plataforma de tracking de eventos para funis de vendas, aumentando a confiabilidade dos dados de conversão.</li>
+                        <li>Desenvolvimento e refatoração de APIs REST em Node.js, com migração de microserviços para Go para melhorar desempenho, eficiência e escalabilidade.</li>
+                        <li>Migração do processamento de eventos de Python para Go em AWS Lambda, com AWS SQS e inserções em lote no MySQL, reduzindo custos em 50%.</li>
+                        <li>Implementação e manutenção de scripts de tracking com Google Tag Manager.</li>
+                        <li>Desenvolvimento de interfaces com React, Next.js e TypeScript, criando componentes reutilizáveis e integrando APIs.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="content-section">
+                <h2>Projeto em destaque</h2>
+                <article class="project-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h3>TrackAssets - Sistema de Gestão de Ativos Retornáveis</h3>
+                            <p>Desenvolvedor Full Stack</p>
+                        </div>
+                    </div>
+                    <p class="description">Plataforma web e mobile para rastreamento e controle de ativos retornáveis, como pallets, containers, freezers e cestos distribuídos entre clientes e pontos de entrega.</p>
+                    <div class="tag-list">
+                        <span>Node.js</span>
+                        <span>TypeScript</span>
+                        <span>Next.js</span>
+                        <span>React Native</span>
+                        <span>PostgreSQL</span>
+                        <span>GCP</span>
+                        <span>Cloudflare</span>
+                    </div>
+                    <ul>
+                        <li>APIs REST em Node.js e TypeScript integradas ao PostgreSQL para gerenciar ativos, clientes, movimentações e histórico operacional.</li>
+                        <li>Frontend web com Next.js, React, TypeScript e Tailwind CSS, usando componentes reutilizáveis e interfaces responsivas.</li>
+                        <li>Aplicativo em React Native para registro e consulta de movimentações em operações de campo.</li>
+                        <li>Implantação na Google Cloud Platform com Cloud Run e Cloud SQL, usando Cloudflare para domínio, DNS e segurança.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="content-section two-column">
+                <div>
+                    <h2>Educação</h2>
+                    <article class="compact-card">
+                        <h3>Instituto Nacional de Telecomunicações (Inatel)</h3>
+                        <p>Bacharelado em Engenharia de Software</p>
+                        <span>Jan 2021 - Dez 2025 | Santa Rita do Sapucaí, MG</span>
+                    </article>
                 </div>
-            </div>
+                <div>
+                    <h2>Idiomas</h2>
+                    <article class="compact-card">
+                        <p>Português - Nativo</p>
+                        <p>Inglês - Intermediário/Avançado</p>
+                    </article>
+                </div>
+            </section>
         </section>
     </main>
-    <!-- Ionicons -->
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
