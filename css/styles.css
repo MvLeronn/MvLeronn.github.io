@@ -383,6 +383,16 @@ a {
     margin-top: 10px;
 }
 
+.education-card h3 {
+    color: var(--main-color);
+    margin-bottom: 12px;
+}
+
+.education-card p {
+    color: var(--main-text-color);
+    margin-bottom: 8px;
+}
+
 @media (max-width: 900px) {
     #container {
         flex-direction: column;
