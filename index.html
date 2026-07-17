@@ -335,6 +335,10 @@
         </main>
     </div>
 
+    <button class="back-to-top" type="button" aria-label="Voltar ao topo" title="Voltar ao topo" hidden>
+        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </button>
+
     <dialog class="image-lightbox" aria-labelledby="image-lightbox-caption">
         <button class="lightbox-close" type="button" aria-label="Fechar imagem ampliada">
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -350,6 +354,7 @@
         const lightboxImage = lightbox.querySelector('img');
         const lightboxCaption = lightbox.querySelector('p');
         const lightboxClose = lightbox.querySelector('.lightbox-close');
+        const backToTop = document.querySelector('.back-to-top');
         let lastImageTrigger;
 
         document.querySelectorAll('.image-zoom-trigger').forEach((trigger) => {
@@ -370,6 +375,14 @@
         });
 
         lightbox.addEventListener('close', () => lastImageTrigger?.focus());
+
+        const updateBackToTop = () => {
+            backToTop.hidden = window.scrollY < 500;
+        };
+
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        window.addEventListener('scroll', updateBackToTop, { passive: true });
+        updateBackToTop();
     </script>
 </body>
 </html>
