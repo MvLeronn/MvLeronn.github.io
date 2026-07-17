@@ -29,6 +29,11 @@
 <body>
     <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
 
+    <button class="mobile-menu-toggle" type="button" aria-label="Abrir menu" aria-controls="bio-container" aria-expanded="false" title="Abrir menu">
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </button>
+    <button class="menu-backdrop" type="button" aria-label="Fechar menu" hidden></button>
+
     <div id="container">
         <aside id="bio-container" aria-label="Perfil e contato">
             <div class="profile-intro">
@@ -355,6 +360,10 @@
         const lightboxCaption = lightbox.querySelector('p');
         const lightboxClose = lightbox.querySelector('.lightbox-close');
         const backToTop = document.querySelector('.back-to-top');
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenuIcon = mobileMenuToggle.querySelector('ion-icon');
+        const mobileSidebar = document.querySelector('#bio-container');
+        const menuBackdrop = document.querySelector('.menu-backdrop');
         let lastImageTrigger;
 
         document.querySelectorAll('.image-zoom-trigger').forEach((trigger) => {
@@ -383,6 +392,31 @@
         backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
         window.addEventListener('scroll', updateBackToTop, { passive: true });
         updateBackToTop();
+
+        const setMobileMenu = (isOpen) => {
+            mobileSidebar.classList.toggle('is-open', isOpen);
+            document.body.classList.toggle('mobile-menu-open', isOpen);
+            mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+            mobileMenuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+            mobileMenuToggle.setAttribute('title', isOpen ? 'Fechar menu' : 'Abrir menu');
+            mobileMenuIcon.setAttribute('name', isOpen ? 'close-outline' : 'menu-outline');
+            menuBackdrop.hidden = !isOpen;
+        };
+
+        mobileMenuToggle.addEventListener('click', () => {
+            setMobileMenu(!mobileSidebar.classList.contains('is-open'));
+        });
+
+        menuBackdrop.addEventListener('click', () => setMobileMenu(false));
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && mobileSidebar.classList.contains('is-open')) setMobileMenu(false);
+        });
+        document.querySelectorAll('.section-nav a').forEach((link) => {
+            link.addEventListener('click', () => setMobileMenu(false));
+        });
+        window.matchMedia('(min-width: 65rem)').addEventListener('change', (event) => {
+            if (event.matches) setMobileMenu(false);
+        });
     </script>
 </body>
 </html>
