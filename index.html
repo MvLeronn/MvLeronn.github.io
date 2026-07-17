@@ -2,199 +2,374 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Marcos Vinicius Correia Sanches, Desenvolvedor Full Stack com experiência em Node.js, React, React Native, Go e cloud.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portfólio de Marcos Vinicius Correia Sanches, Desenvolvedor Full Stack com experiência em aplicações web e mobile, APIs, processamento de eventos e cloud.">
+    <meta name="theme-color" content="#101A17">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Marcos Vinicius Correia Sanches | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Aplicações web e mobile, APIs, processamento de eventos e infraestrutura em cloud.">
+    <meta property="og:url" content="https://mvleronn.github.io/">
+    <meta property="og:image" content="https://mvleronn.github.io/img/ta1.png">
+    <meta property="og:image:alt" content="Dashboard operacional do projeto TrackAssets">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marcos Vinicius Correia Sanches | Desenvolvedor Full Stack">
+    <meta name="twitter:description" content="Aplicações web e mobile, APIs, processamento de eventos e infraestrutura em cloud.">
+    <meta name="twitter:image" content="https://mvleronn.github.io/img/ta1.png">
+    <meta name="twitter:image:alt" content="Dashboard operacional do projeto TrackAssets">
     <title>Marcos Vinicius Correia Sanches | Desenvolvedor Full Stack</title>
+    <link rel="canonical" href="https://mvleronn.github.io/">
+    <link rel="icon" type="image/jpeg" href="img/profile-640.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="css/styles.css?v=20260713">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=20260717-3">
 </head>
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Marcos Vinicius Correia Sanches</h2>
-            <img src="img/profile.png?v=20260713" alt="Foto de Marcos Vinicius Correia Sanches">
-            <p id="welcome-text">Desenvolvedor Full Stack</p>
-            <p id="bio-info">Criação de soluções web e mobile com foco em APIs, interfaces responsivas e cloud.</p>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+
+    <div id="container">
+        <aside id="bio-container" aria-label="Perfil e contato">
+            <div class="profile-intro">
+                <img class="profile-photo" src="img/profile-640.jpg?v=20260717" width="640" height="665" alt="Marcos Vinicius Correia Sanches" fetchpriority="high" decoding="async">
+                <div>
+                    <p class="sidebar-name">Marcos Vinicius Correia Sanches</p>
+                    <p id="welcome-text">Desenvolvedor Full Stack</p>
+                </div>
+            </div>
+
+            <p id="bio-info">Node.js | React | Next.js<br>React Native | C# | Go</p>
+
+            <nav class="section-nav" aria-label="Navegação do portfólio">
+                <a href="#projeto">Projeto em destaque</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#formacao">Formação</a>
+            </nav>
 
             <ul id="social-container" aria-label="Redes sociais">
-                <li><a href="https://www.linkedin.com/in/marcosviniciuscs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://github.com/MvLeronn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://mvcssoftware.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site pessoal"><ion-icon name="globe-outline"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/marcosviniciuscs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></a></li>
+                <li><a href="https://github.com/MvLeronn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><ion-icon name="logo-github" aria-hidden="true"></ion-icon></a></li>
+                <li><a href="https://mvcssoftware.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site pessoal"><ion-icon name="globe-outline" aria-hidden="true"></ion-icon></a></li>
             </ul>
 
             <div class="contact-list">
                 <div class="contact-item">
-                    <ion-icon name="mail-outline"></ion-icon>
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
                     <a href="mailto:marcos23_correia@hotmail.com">marcos23_correia@hotmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <ion-icon name="location-outline"></ion-icon>
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
                     <span>Pouso Alegre - MG</span>
                 </div>
             </div>
         </aside>
 
-        <section id="about-container">
-            <section class="hero-section">
-                <p class="eyebrow">Portfólio profissional</p>
-                <h1>Marcos Vinicius Correia Sanches</h1>
-                <p id="title"><span class="highlight">Desenvolvedor Full Stack | Node.js | React | React Native</span></p>
-                <p class="description">Desenvolvedor Full Stack com experiência na criação de plataformas web e mobile.</p>
-                <p class="description">Tenho conhecimento em React, Next.js, React Native, Node.js, Go, TypeScript, APIs REST, bancos de dados relacionais e implantação de aplicações em cloud.</p>
-                <div class="action-row">
-                    <a href="https://github.com/MvLeronn" class="primary-button" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon><span>Ver projetos</span></a>
-                    <a href="https://www.linkedin.com/in/marcosviniciuscs/" class="secondary-button" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon><span>LinkedIn</span></a>
-                </div>
-            </section>
-
-            <section class="content-section">
-                <h2>Habilidades</h2>
-                <p class="section-intro">Tecnologias e práticas presentes no currículo e na experiência profissional.</p>
-
-                <div id="skills-container">
-                    <div class="skills-box">
-                        <p class="skills-title">Frontend</p>
-                        <div class="icon-row">
-                            <span class="skill-item"><i class="devicon-react-original colored" aria-hidden="true"></i>React</span>
-                            <span class="skill-item"><i class="devicon-nextjs-plain" aria-hidden="true"></i>Next.js</span>
-                            <span class="skill-item"><i class="devicon-typescript-plain colored" aria-hidden="true"></i>TypeScript</span>
-                            <span class="skill-item"><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span>
-                            <span class="skill-item"><i class="devicon-tailwindcss-original colored" aria-hidden="true"></i>Tailwind CSS</span>
-                            <span class="skill-item"><i class="devicon-html5-plain colored" aria-hidden="true"></i>HTML5</span>
-                            <span class="skill-item"><i class="devicon-css3-plain colored" aria-hidden="true"></i>CSS3</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Backend</p>
-                        <div class="icon-row">
-                            <span class="skill-item"><i class="devicon-nodejs-plain-wordmark colored" aria-hidden="true"></i>Node.js</span>
-                            <span class="skill-item"><i class="devicon-go-original-wordmark colored" aria-hidden="true"></i>Go</span>
-                            <span class="skill-item"><i class="devicon-csharp-plain colored" aria-hidden="true"></i>C#</span>
-                            <span class="skill-item"><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span>
-                            <span class="skill-item"><i class="devicon-java-plain colored" aria-hidden="true"></i>Java</span>
-                            <span class="skill-item"><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i>C++</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Mobile</p>
-                        <div class="icon-row">
-                            <span class="skill-item"><i class="devicon-react-original colored" aria-hidden="true"></i>React Native</span>
-                            <span class="skill-item"><i class="devicon-kotlin-plain colored" aria-hidden="true"></i>Kotlin</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Testes e API</p>
-                        <div class="icon-row">
-                            <span class="skill-item"><i class="devicon-jest-plain colored" aria-hidden="true"></i>Jest</span>
-                            <span class="skill-chip">Vitest</span>
-                            <span class="skill-item"><i class="devicon-cypressio-plain colored" aria-hidden="true"></i>Cypress</span>
-                            <span class="skill-item"><i class="devicon-postman-plain colored" aria-hidden="true"></i>Postman</span>
-                            <span class="skill-chip">REST APIs</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Cloud e Dados</p>
-                        <div class="icon-row">
-                            <span class="skill-item"><i class="devicon-googlecloud-plain colored" aria-hidden="true"></i>GCP</span>
-                            <span class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>AWS</span>
-                            <span class="skill-item"><i class="devicon-cloudflare-plain colored" aria-hidden="true"></i>Cloudflare</span>
-                            <span class="skill-item"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i>PostgreSQL</span>
-                            <span class="skill-item"><i class="devicon-mysql-plain colored" aria-hidden="true"></i>MySQL</span>
-                            <span class="skill-item"><i class="devicon-mongodb-plain colored" aria-hidden="true"></i>MongoDB</span>
-                        </div>
-                    </div>
-
-                    <div class="skills-box">
-                        <p class="skills-title">Ferramentas e Práticas</p>
-                        <div class="icon-row">
-                            <span class="skill-item"><i class="devicon-git-plain colored" aria-hidden="true"></i>Git</span>
-                            <span class="skill-item"><i class="devicon-docker-plain colored" aria-hidden="true"></i>Docker</span>
-                            <span class="skill-item"><i class="devicon-githubactions-plain colored" aria-hidden="true"></i>GitHub Actions</span>
-                            <span class="skill-item"><i class="devicon-jenkins-line colored" aria-hidden="true"></i>Jenkins</span>
-                            <span class="skill-chip">Clean Code</span>
-                            <span class="skill-chip">SOLID</span>
-                            <span class="skill-chip">Scrum</span>
-                        </div>
+        <main id="main-content">
+            <section class="hero-section" aria-labelledby="hero-title">
+                <div class="hero-copy">
+                    <p class="eyebrow">Desenvolvedor Full Stack</p>
+                    <h1 id="hero-title">Marcos Vinicius<br>Correia Sanches</h1>
+                    <p class="hero-role">Desenvolvo aplicações web e mobile, da interface à infraestrutura.</p>
+                    <p class="hero-description">Atuo com Node.js, React, Next.js, React Native, C#, Go e TypeScript, integrando APIs REST, bancos de dados SQL e infraestrutura em cloud.</p>
+                    <div class="action-row">
+                        <a href="#projeto" class="primary-button"><span>Ver case TrackAssets</span><ion-icon name="arrow-down-outline" aria-hidden="true"></ion-icon></a>
+                        <a href="MarcosViniciusCorreiaSanches_CV_2026.pdf" class="secondary-button" download><ion-icon name="document-text-outline" aria-hidden="true"></ion-icon><span>Baixar currículo</span></a>
                     </div>
                 </div>
             </section>
 
-            <section class="content-section">
-                <h2>Experiência</h2>
-                <article class="timeline-card">
-                    <div class="timeline-header">
+            <section id="projeto" class="content-section project-case" aria-labelledby="project-title">
+                <header class="project-heading">
+                    <p class="section-label">Projeto em destaque</p>
+                    <h2 id="project-title">TrackAssets</h2>
+                    <p class="project-lead">Controle de ativos retornáveis, do registro em campo à conferência operacional.</p>
+                    <p class="section-description">Plataforma para registrar entregas e recolhas, calcular saldos e rastrear ativos retornáveis, como pallets, cestos, freezers e outros itens, entre clientes e pontos de entrega.</p>
+                    <ul class="tag-list" aria-label="Tecnologias usadas no TrackAssets">
+                        <li>Node.js</li>
+                        <li>TypeScript</li>
+                        <li>Next.js</li>
+                        <li>React Native</li>
+                        <li>PostgreSQL</li>
+                        <li>GCP</li>
+                    </ul>
+                    <p class="project-status"><ion-icon name="lock-closed-outline" aria-hidden="true"></ion-icon>Repositório privado</p>
+                </header>
+
+                <figure class="media-frame dashboard-frame">
+                    <button class="image-zoom-trigger" type="button" aria-label="Ampliar dashboard do TrackAssets" data-caption="Dashboard operacional: saldos, pendências e movimentações recentes em uma única visão.">
+                        <img src="img/ta1.png" width="1919" height="1079" loading="lazy" decoding="async" alt="Dashboard do TrackAssets com indicadores de ativos, movimentos pendentes e clientes com maior saldo">
+                    </button>
+                    <figcaption>Dashboard operacional: saldos, pendências e movimentações recentes em uma única visão.</figcaption>
+                </figure>
+
+                <div class="case-split">
+                    <article class="case-block">
+                        <h3>Problema</h3>
+                        <p>Muitas empresas ainda não possuem um controle estruturado dos ativos retornáveis ou dependem de planilhas, anotações e ferramentas isoladas. Isso fragmenta o histórico, dificulta a leitura dos saldos e limita a evolução do processo.</p>
+                    </article>
+                    <article class="case-block">
+                        <h3>Solução</h3>
+                        <p>O TrackAssets centraliza entregas, recolhas, saldos e localização dos ativos em uma plataforma web e mobile, conectando o trabalho em campo à operação.</p>
+                    </article>
+                </div>
+
+                <div class="case-split case-detail">
+                    <figure class="media-frame detail-frame">
+                        <button class="image-zoom-trigger" type="button" aria-label="Ampliar detalhes de um movimento pendente" data-caption="O motorista registra a operação; a equipe responsável revisa e confirma o movimento.">
+                            <img src="img/ta2.png" width="1914" height="1079" loading="lazy" decoding="async" alt="Detalhes de um movimento pendente com entregas, recolhimentos e ações de conferência operacional">
+                        </button>
+                        <figcaption>O motorista registra a operação; a equipe responsável revisa e confirma o movimento.</figcaption>
+                    </figure>
+
+                    <article class="case-block decisions-block">
+                        <h3>Decisões técnicas</h3>
+                        <ul class="decision-list">
+                            <li>O motorista registra entregas e recolhas no aplicativo, enquanto a equipe operacional confere e acompanha os movimentos no painel web.</li>
+                            <li>Controle de ativos por quantidade ou por unidade física identificada por código.</li>
+                            <li>Arquitetura multi-tenant com isolamento dos dados por empresa.</li>
+                            <li>Autenticação com access token, refresh token rotativo e cookies HTTP-only.</li>
+                            <li>Componentes reutilizáveis e design system compartilhado pelo painel.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <section class="architecture-section" aria-labelledby="architecture-title">
+                    <div class="architecture-copy">
+                        <h3 id="architecture-title">Arquitetura do sistema</h3>
+                        <p>Uma API centraliza as regras de negócio e aplica o isolamento dos dados por empresa, conectando o painel web ao aplicativo de campo.</p>
+                    </div>
+
+                    <div class="architecture-flow" aria-label="Aplicativo React Native e painel Next.js conectados à API Node.js e Express, com Prisma, PostgreSQL, Cloud Run e Cloud SQL">
+                        <div class="architecture-node architecture-sources">
+                            <span>Interfaces</span>
+                            <div class="architecture-source-detail">
+                                <strong>Aplicativo React Native</strong>
+                                <small>Operação em campo</small>
+                            </div>
+                            <div class="architecture-source-detail">
+                                <strong>Site web com Next.js</strong>
+                                <small>Painel operacional e administrativo</small>
+                            </div>
+                        </div>
+                        <span class="architecture-arrow" aria-hidden="true">→</span>
+                        <div class="architecture-node">
+                            <span>Regras de negócio</span>
+                            <strong>Node.js + Express</strong>
+                            <small>API REST multi-tenant</small>
+                        </div>
+                        <span class="architecture-arrow" aria-hidden="true">→</span>
+                        <div class="architecture-node">
+                            <span>Persistência</span>
+                            <strong>Prisma + PostgreSQL</strong>
+                            <small>Dados operacionais e histórico</small>
+                        </div>
+                        <span class="architecture-arrow" aria-hidden="true">→</span>
+                        <div class="architecture-node">
+                            <span>Google Cloud</span>
+                            <strong>Cloud Run + Cloud SQL</strong>
+                            <small>Aplicação e banco gerenciados</small>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mobile-section" aria-labelledby="mobile-title">
+                    <div class="subsection-heading">
+                        <h3 id="mobile-title">Operação em campo</h3>
+                        <p>O motorista registra entregas e recolhas em campo e consulta o histórico das movimentações.</p>
+                    </div>
+
+                    <div class="mobile-showcase" role="region" aria-label="Telas do aplicativo TrackAssets" tabindex="0">
+                        <figure class="phone-shot">
+                            <div class="phone-frame">
+                                <button class="image-zoom-trigger" type="button" aria-label="Ampliar tela inicial do aplicativo TrackAssets" data-caption="Início">
+                                    <img src="img/ta-mobile1.jpg" width="738" height="1600" loading="lazy" decoding="async" alt="Tela inicial do aplicativo TrackAssets com ações para criar movimentação e consultar histórico">
+                                </button>
+                            </div>
+                            <figcaption>Início</figcaption>
+                        </figure>
+                        <figure class="phone-shot">
+                            <div class="phone-frame">
+                                <button class="image-zoom-trigger" type="button" aria-label="Ampliar tela de novo movimento no aplicativo TrackAssets" data-caption="Novo movimento">
+                                    <img src="img/ta-mobile2.jpg" width="738" height="1600" loading="lazy" decoding="async" alt="Primeira etapa para registrar uma nova movimentação no aplicativo TrackAssets">
+                                </button>
+                            </div>
+                            <figcaption>Novo movimento</figcaption>
+                        </figure>
+                        <figure class="phone-shot">
+                            <div class="phone-frame">
+                                <button class="image-zoom-trigger" type="button" aria-label="Ampliar histórico do aplicativo TrackAssets" data-caption="Histórico">
+                                    <img src="img/ta-mobile3.jpg" width="738" height="1600" loading="lazy" decoding="async" alt="Histórico de entregas e recolhimentos no aplicativo TrackAssets">
+                                </button>
+                            </div>
+                            <figcaption>Histórico</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <div class="result-block">
+                    <p class="result-label">Entrega</p>
+                    <p>O produto conecta o registro do motorista à conferência operacional em um fluxo funcional de ponta a ponta, com cálculo de saldos e histórico centralizado da localização dos ativos.</p>
+                </div>
+            </section>
+
+            <section id="experiencia" class="content-section" aria-labelledby="experience-title">
+                <div class="section-heading">
+                    <h2 id="experience-title">Experiência</h2>
+                </div>
+
+                <article class="experience-entry">
+                    <header class="experience-header">
                         <div>
-                            <h3>Oracclum Company LTDA</h3>
-                            <p>Estagiário em Desenvolvimento de Software (Full Stack)</p>
+                            <h3>Estagiário em Desenvolvimento de Software</h3>
+                            <p>Oracclum Company LTDA · Full Stack</p>
                         </div>
                         <span>Abr 2025 - Dez 2025</span>
-                    </div>
+                    </header>
                     <ul>
-                        <li>Desenvolvimento de plataforma de tracking de eventos para funis de vendas, aumentando a confiabilidade dos dados de conversão.</li>
-                        <li>Desenvolvimento e refatoração de APIs REST em Node.js, com migração de microserviços para Go para melhorar desempenho, eficiência e escalabilidade.</li>
-                        <li>Migração do processamento de eventos de Python para Go em AWS Lambda, com AWS SQS e inserções em lote no MySQL, reduzindo custos em 50%.</li>
-                        <li>Implementação e manutenção de scripts de tracking com Google Tag Manager.</li>
-                        <li>Desenvolvimento de interfaces com React, Next.js e TypeScript, criando componentes reutilizáveis e integrando APIs.</li>
+                        <li>Desenvolvi e evoluí uma plataforma de rastreamento de eventos para funis de vendas, aumentando a confiabilidade e a consistência dos dados de conversão.</li>
+                        <li>Criei interfaces com React, Next.js e TypeScript, incluindo a migração de funcionalidades de React para Next.js e a criação de componentes reutilizáveis.</li>
+                        <li>Criei e refatorei APIs REST em Node.js e participei da migração de microserviços para Go, com foco em desempenho, eficiência e escalabilidade.</li>
+                        <li>Migrei o processamento de eventos de Python para Go em AWS Lambda, com AWS SQS e inserções em lote no MySQL, reduzindo os custos em <strong>50%</strong>.</li>
+                        <li>Implementei e mantive scripts de tracking com Google Tag Manager, integrados a plataformas como Taboola e provedores de checkout.</li>
+                        <li>Modelei e revisei estruturas no MySQL, participei de revisões de código e validei APIs com Postman em ambiente de homologação.</li>
                     </ul>
                 </article>
             </section>
 
-            <section class="content-section">
-                <h2>Projeto em destaque</h2>
-                <article class="project-card">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>TrackAssets - Sistema de Gestão de Ativos Retornáveis</h3>
-                            <p>Desenvolvedor Full Stack</p>
-                        </div>
+            <section id="habilidades" class="content-section" aria-labelledby="skills-title">
+                <div class="section-heading">
+                    <h2 id="skills-title">Habilidades</h2>
+                    <p>Tecnologias e conhecimentos aplicados no desenvolvimento de produtos, APIs, testes e infraestrutura.</p>
+                </div>
+
+                <div class="core-skills">
+                    <span class="skill-item skill-item-core"><i class="devicon-react-original colored" aria-hidden="true"></i>React</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-nextjs-plain" aria-hidden="true"></i>Next.js</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-react-original colored" aria-hidden="true"></i>React Native</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-nodejs-plain-wordmark colored" aria-hidden="true"></i>Node.js</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-go-original-wordmark colored" aria-hidden="true"></i>Go</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-typescript-plain colored" aria-hidden="true"></i>TypeScript</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i>PostgreSQL</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-mysql-plain colored" aria-hidden="true"></i>MySQL</span>
+                    <span class="skill-item skill-item-core"><img class="skill-item-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/googlecloud/googlecloud-original.svg" width="36" height="36" alt="" aria-hidden="true">GCP</span>
+                    <span class="skill-item skill-item-core"><i class="devicon-amazonwebservices-plain-wordmark colored" aria-hidden="true"></i>AWS</span>
+                </div>
+
+                <div class="secondary-skills">
+                    <div class="secondary-skills-heading">
+                        <h3>Conhecimentos complementares</h3>
+                        <p>Linguagens, ferramentas e práticas que também utilizo no desenvolvimento e na entrega de software.</p>
                     </div>
-                    <p class="description">Plataforma web e mobile para rastreamento e controle de ativos retornáveis, como pallets, containers, freezers e cestos distribuídos entre clientes e pontos de entrega.</p>
-                    <div class="tag-list">
-                        <span>Node.js</span>
-                        <span>TypeScript</span>
-                        <span>Next.js</span>
-                        <span>React Native</span>
-                        <span>PostgreSQL</span>
-                        <span>GCP</span>
-                        <span>Cloudflare</span>
+
+                    <div class="secondary-skills-grid">
+                        <section class="skill-group" aria-labelledby="interfaces-title">
+                            <h4 id="interfaces-title">Frontend</h4>
+                            <div class="skill-list">
+                                <span class="skill-item"><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span>
+                                <span class="skill-item"><i class="devicon-tailwindcss-original colored" aria-hidden="true"></i>Tailwind CSS</span>
+                                <span class="skill-item"><i class="devicon-html5-plain colored" aria-hidden="true"></i>HTML5</span>
+                                <span class="skill-item"><i class="devicon-css3-plain colored" aria-hidden="true"></i>CSS3</span>
+                            </div>
+                        </section>
+
+                        <section class="skill-group" aria-labelledby="backend-title">
+                            <h4 id="backend-title">Backend e dados</h4>
+                            <div class="skill-list">
+                                <span class="skill-item"><i class="devicon-csharp-plain colored" aria-hidden="true"></i>C#</span>
+                                <span class="skill-item"><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span>
+                                <span class="skill-item"><i class="devicon-java-plain colored" aria-hidden="true"></i>Java</span>
+                                <span class="skill-item"><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i>C++</span>
+                                <span class="skill-item"><i class="devicon-kotlin-plain colored" aria-hidden="true"></i>Kotlin</span>
+                                <span class="skill-item"><i class="devicon-mongodb-plain colored" aria-hidden="true"></i>MongoDB</span>
+                            </div>
+                        </section>
+
+                        <section class="skill-group" aria-labelledby="testing-title">
+                            <h4 id="testing-title">Testes e APIs</h4>
+                            <div class="skill-list">
+                                <span class="skill-item"><i class="devicon-jest-plain colored" aria-hidden="true"></i>Jest</span>
+                                <span class="skill-chip">Vitest</span>
+                                <span class="skill-item"><i class="devicon-cypressio-plain colored" aria-hidden="true"></i>Cypress</span>
+                                <span class="skill-item"><i class="devicon-postman-plain colored" aria-hidden="true"></i>Postman</span>
+                                <span class="skill-chip">REST APIs</span>
+                            </div>
+                        </section>
+
+                        <section class="skill-group" aria-labelledby="tools-title">
+                            <h4 id="tools-title">Ferramentas e práticas</h4>
+                            <div class="skill-list">
+                                <span class="skill-item"><i class="devicon-cloudflare-plain colored" aria-hidden="true"></i>Cloudflare</span>
+                                <span class="skill-item"><i class="devicon-git-plain colored" aria-hidden="true"></i>Git</span>
+                                <span class="skill-item"><i class="devicon-docker-plain colored" aria-hidden="true"></i>Docker</span>
+                                <span class="skill-item"><i class="devicon-githubactions-plain colored" aria-hidden="true"></i>GitHub Actions</span>
+                                <span class="skill-item"><i class="devicon-jenkins-line colored" aria-hidden="true"></i>Jenkins</span>
+                                <span class="skill-chip">Clean Code</span>
+                                <span class="skill-chip">SOLID</span>
+                                <span class="skill-chip">Scrum</span>
+                            </div>
+                        </section>
                     </div>
-                    <ul>
-                        <li>APIs REST em Node.js e TypeScript integradas ao PostgreSQL para gerenciar ativos, clientes, movimentações e histórico operacional.</li>
-                        <li>Frontend web com Next.js, React, TypeScript e Tailwind CSS, usando componentes reutilizáveis e interfaces responsivas.</li>
-                        <li>Aplicativo em React Native para registro e consulta de movimentações em operações de campo.</li>
-                        <li>Implantação na Google Cloud Platform com Cloud Run e Cloud SQL, usando Cloudflare para domínio, DNS e segurança.</li>
-                    </ul>
-                </article>
+                </div>
             </section>
 
-            <section class="content-section two-column">
+            <section id="formacao" class="content-section final-grid" aria-label="Formação e idiomas">
                 <div>
                     <h2>Educação</h2>
-                    <article class="compact-card education-card">
+                    <article class="compact-entry education-entry">
                         <h3>Bacharelado em Engenharia de Software</h3>
                         <p>Instituto Nacional de Telecomunicações (Inatel)</p>
-                        <span>Jan 2021 - Dez 2025 | Santa Rita do Sapucaí, MG</span>
+                        <span>Jan 2021 - Dez 2025 · Santa Rita do Sapucaí, MG</span>
                     </article>
                 </div>
                 <div>
                     <h2>Idiomas</h2>
-                    <article class="compact-card">
-                        <p>Português - Nativo</p>
-                        <p>Inglês - Intermediário/Avançado</p>
+                    <article class="compact-entry language-entry">
+                        <p><strong>Português</strong><span>Nativo</span></p>
+                        <p><strong>Inglês</strong><span>Intermediário/Avançado</span></p>
                     </article>
                 </div>
             </section>
-        </section>
-    </main>
+
+        </main>
+    </div>
+
+    <dialog class="image-lightbox" aria-labelledby="image-lightbox-caption">
+        <button class="lightbox-close" type="button" aria-label="Fechar imagem ampliada">
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <img src="" alt="">
+        <p id="image-lightbox-caption"></p>
+    </dialog>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const lightbox = document.querySelector('.image-lightbox');
+        const lightboxImage = lightbox.querySelector('img');
+        const lightboxCaption = lightbox.querySelector('p');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+        let lastImageTrigger;
+
+        document.querySelectorAll('.image-zoom-trigger').forEach((trigger) => {
+            trigger.addEventListener('click', () => {
+                const image = trigger.querySelector('img');
+                lastImageTrigger = trigger;
+                lightboxImage.src = image.currentSrc || image.src;
+                lightboxImage.alt = image.alt;
+                lightboxCaption.textContent = trigger.dataset.caption;
+                lightbox.showModal();
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => lightbox.close());
+
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) lightbox.close();
+        });
+
+        lightbox.addEventListener('close', () => lastImageTrigger?.focus());
+    </script>
 </body>
 </html>
