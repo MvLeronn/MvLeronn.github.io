@@ -395,12 +395,44 @@ img {
     max-width: 60ch;
 }
 
+.project-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-xs);
+}
+
 .project-heading h2,
 .section-heading h2,
 .final-grid h2 {
     margin-top: var(--space-xs);
     font-size: 2.25rem;
     line-height: 1.1;
+}
+
+.project-heading .project-title-row h2 {
+    margin-top: 0;
+}
+
+.project-repo-link {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.project-repo-link ion-icon {
+    flex: 0 0 auto;
+    font-size: 1.15rem;
 }
 
 .project-lead {
@@ -449,21 +481,6 @@ img {
     background-color: var(--color-surface);
     font-size: var(--text-caption);
     font-weight: 700;
-}
-
-.project-status {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
-    margin-top: var(--space-md);
-    color: var(--color-muted);
-    font-size: var(--text-caption);
-    font-weight: 600;
-}
-
-.project-status ion-icon {
-    flex: 0 0 auto;
-    color: var(--color-primary);
 }
 
 .media-frame {
@@ -992,6 +1009,11 @@ img {
         border-color: var(--color-text);
         background-color: var(--color-text);
         transform: translateY(-2px);
+    }
+
+    .project-repo-link:hover {
+        background-color: var(--color-primary);
+        color: var(--color-primary-dark);
     }
 
     .lightbox-close:hover {
